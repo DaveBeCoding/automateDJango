@@ -4,7 +4,23 @@ startdjgo.py
 # echo $name_project
 # echo 'bash scripts are fun! '
 
+#work'd
+input="/home/<your_user>/records/r_sheet.txt"
+while IFS= read -r line 
+do  
+  echo $line  
+done < $input  
 
+echo $line
+
+
+
+
+
+
+
+# result=$(return_sh_var.py)
+# echo $result
 
 sleep 10s
 # cd build_django/

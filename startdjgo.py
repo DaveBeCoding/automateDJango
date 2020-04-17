@@ -45,14 +45,14 @@ def create_project(chc):
 def create_file(name):
     clear()
     spin_up_django(name)
-    os.chdir(records) #change dir
-    f= open("r_sheet.txt","w+")
-    f.write(default_test+name)
-    # for i in range(10):
-    #     f.write("This is line %d\r\n" % (i+1))
-    f.close()
-    print(" file at "+ default_test+name +" was successfully created")
-    pause(timer_five)
+    # os.chdir(records) #change dir
+    # f= open("r_sheet.txt","w+")
+    # f.write(default_test+name)
+    # # for i in range(10):
+    # #     f.write("This is line %d\r\n" % (i+1))
+    # f.close()
+    # print(" file at "+ default_test+name +" was successfully created")
+    # pause(timer_five)
 
 
 def project_name():
@@ -97,8 +97,5 @@ def activate_venv(p_name):
     os.system("bashScript.sh") #this runs the script
     # subprocess.Popen("bashScript.sh") #this works
     
-    
-   
-
 if __name__ == "__main__":
     main()
