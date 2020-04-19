@@ -27,3 +27,7 @@ pip freeze
 cd src && django-admin startproject build_djangoP .
 python manage.py migrate && python manage.py runserver
 #build_django
+
+
+
+#
