@@ -9,6 +9,7 @@ from default_locate import *
 def location_menu():
     clear()
     # pause(timer_three)
+    print("THIS IS THE RIGHT ONE #################################################################")
     choices = input("Select which location you would like your project to be saved \n"
                     
                     "1) Default location ~/dev/django/<project name>/ \n"
@@ -44,14 +45,14 @@ def create_project(chc):
 
 def create_file(name):
     clear()
+    os.chdir(records) #change dir
+    f= open("r_sheet.txt","w+")
+    f.write(default_test+name)
+    # for i in range(10):
+    #     f.write("This is line %d\r\n" % (i+1))
+    f.close()
+    print(" file record created name "+ default_test+name +" ")
     spin_up_django(name)
-    # os.chdir(records) #change dir
-    # f= open("r_sheet.txt","w+")
-    # f.write(default_test+name)
-    # # for i in range(10):
-    # #     f.write("This is line %d\r\n" % (i+1))
-    # f.close()
-    # print(" file at "+ default_test+name +" was successfully created")
     # pause(timer_five)
 
 

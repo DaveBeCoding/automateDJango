@@ -11,29 +11,19 @@ do
   echo $line  
 done < $input  
 
-echo $line
+cd $line
+# cd build_django/ #old static working way
 
-
-
-
-
-
-
-# result=$(return_sh_var.py)
-# echo $result
-
-sleep 10s
-# cd build_django/
 # pwd
-# ls -al
+ls -al
+# sleep 10s
 
-# # source bashScript.sh
-# # source "./home/<your_user>/dev/dummyLocations/test1/build_django/bin/activate"
-# source bin/activate
+# # # source "./home/<your_user>/dev/dummyLocations/test1/build_django/bin/activate"
+source bin/activate
 
-# sleep 5s
-# pip install django==2.0.7
-# pip freeze
-# cd src && django-admin startproject build_djangoP .
-# python manage.py migrate && python manage.py runserver
-# build_django
+sleep 5s
+pip install django==2.0.7
+pip freeze
+cd src && django-admin startproject build_djangoP .
+python manage.py migrate && python manage.py runserver
+#build_django
