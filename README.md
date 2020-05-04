@@ -1,5 +1,5 @@
 # automateDJango
-automate django projects for web design 
+automate django projects for web development  
 Unix/Linux envirement
 
 
