@@ -10,3 +10,5 @@ To run this repository
 2) add the cloned repository dir/file location to your .bashrc path, add at the end of .bashrc
 
 3) source bashScript.sh
+
+4) source bashScript.sh 
